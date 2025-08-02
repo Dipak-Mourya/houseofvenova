@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MessageCircle, Mail, X } from "lucide-react"
+import Image from "next/image"
 
 interface ContactModalProps {
   isOpen: boolean
@@ -165,9 +166,11 @@ Looking forward to hearing from you!`
         <div className="space-y-4">
           {selectedProduct && (
             <div className="text-center mb-4 p-4 bg-[#f7d1d8]/20 rounded-lg">
-              <img
+              <Image
                 src={selectedProduct.image || "/placeholder.svg"}
                 alt={selectedProduct.name}
+                width={80}
+                height={80}
                 className="w-20 h-20 object-cover rounded-lg mx-auto mb-2"
               />
               <p className="text-sm text-[#3b2c3d]/70">{selectedProduct.description}</p>
@@ -247,7 +250,7 @@ Looking forward to hearing from you!`
           </div>
 
           <p className="text-xs text-[#3b2c3d]/60 text-center">
-            * All fields are required. We'll respond within 24 hours.
+            * All fields are required. We&apos;ll respond within 24 hours.
           </p>
         </div>
       </DialogContent>

@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Crown, Heart, Star, MessageCircle, Users, Award, Sparkles } from "lucide-react"
 import { Layout } from "@/components/layout"
 import { ContactModal } from "@/components/contact-modal"
+import Image from "next/image"
 
 export default function AboutPage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
@@ -73,20 +74,22 @@ export default function AboutPage() {
                     </p>
                     <p>
                       What started as a hobby of creating nail art for friends and family quickly grew into something
-                      bigger. We realized that many women wanted gorgeous nails but didn't have the time for salon
-                      visits or the skills for DIY nail art. That's when we decided to create HouseofVenova.
+                      bigger. We realized that many women wanted gorgeous nails but didn&apos;t have the time for salon
+                      visits or the skills for DIY nail art. That&apos;s when we decided to create HouseofVenova.
                     </p>
                     <p>
-                      Today, we're proud to serve customers across India, delivering "excessive glamour" right to their
+                      Today, we&apos;re proud to serve customers across India, delivering &ldquo;excessive glamour&rdquo; right to their
                       doorstep. Each design is still handcrafted with the same love and attention to detail that we put
                       into our very first creations.
                     </p>
                   </div>
                 </div>
                 <div className="relative">
-                  <img
+                  <Image
                     src="/placeholder.svg?height=400&width=500"
                     alt="HouseofVenova Founders"
+                    width={500}
+                    height={400}
                     className="w-full h-96 object-cover rounded-2xl shadow-lg"
                   />
                   <div className="absolute -bottom-6 -right-6 bg-[#d87ca0] text-white p-4 rounded-xl shadow-lg">
@@ -139,9 +142,11 @@ export default function AboutPage() {
             <div className="mb-16">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="relative order-2 lg:order-1">
-                  <img
+                  <Image
                     src="/placeholder.svg?height=400&width=500"
                     alt="Our Mission"
+                    width={500}
+                    height={400}
                     className="w-full h-96 object-cover rounded-2xl shadow-lg"
                   />
                   <div className="absolute -top-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
@@ -160,7 +165,7 @@ export default function AboutPage() {
                       nail art, delivered with convenience and care to their doorstep.
                     </p>
                     <p>
-                      We're committed to using sustainable practices, supporting local artisans, and building a
+                      We&apos;re committed to using sustainable practices, supporting local artisans, and building a
                       community of confident, glamorous women across the country.
                     </p>
                   </div>

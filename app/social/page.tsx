@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Crown, Instagram, Heart, MessageCircle, Share, Play } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function SocialPage() {
   const socialPosts = [
@@ -215,9 +216,11 @@ export default function SocialPage() {
                 className="group hover:shadow-xl transition-all duration-300 border-[#d87ca0]/20 overflow-hidden"
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={post.image || "/placeholder.svg"}
                     alt="Social media post"
+                    width={400}
+                    height={256}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   {post.type === "video" && (
@@ -262,9 +265,11 @@ export default function SocialPage() {
                 <Card key={index} className="p-6 border-[#d87ca0]/20 hover:shadow-lg transition-shadow">
                   <CardContent className="p-0">
                     <div className="flex items-center mb-4">
-                      <img
+                      <Image
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.name}
+                        width={48}
+                        height={48}
                         className="w-12 h-12 rounded-full object-cover mr-4"
                       />
                       <div>
@@ -296,9 +301,11 @@ export default function SocialPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="aspect-square rounded-lg overflow-hidden">
-                    <img
+                    <Image
                       src={`/placeholder.svg?height=200&width=200&query=customer nail art photo ${i}`}
                       alt={`Customer photo ${i}`}
+                      width={200}
+                      height={200}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
