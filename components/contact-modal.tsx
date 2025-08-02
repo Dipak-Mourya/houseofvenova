@@ -250,7 +250,7 @@ Looking forward to hearing from you!`
           </div>
 
           <p className="text-xs text-[#3b2c3d]/60 text-center">
-            * All fields are required. We&apos;ll respond within 24 hours.
+             All fields are required. We&apos;ll respond within 24 hours.
           </p>
         </div>
       </DialogContent>
